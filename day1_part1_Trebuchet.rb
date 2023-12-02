@@ -12,7 +12,7 @@ def sum_calibration_values(content)
 
   content.each_line do |line|
     digits = line.scan(/\d/).map(&:to_i)
-    sum += digits.first * 10 + digits.last if digits.length >= 2
+    sum += digits.first * 10 + digits.last
   end
 
   sum
